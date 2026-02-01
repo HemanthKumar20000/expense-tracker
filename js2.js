@@ -117,6 +117,7 @@ clearfilter.addEventListener("click",()=>{
     filter.value=""
     monthFilter.value = "";
     renderExpenseList(filterd_expenses)
+    
 })
 
 monthFilter.addEventListener("change", (e) => {
