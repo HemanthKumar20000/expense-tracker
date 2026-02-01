@@ -132,6 +132,6 @@ monthFilter.addEventListener("change", (e) => {
         });
     }
 
-    filter.value = "";   // reset category filter
+    filter.value = "";  
     renderExpenseList(filterd_expenses);
 });
