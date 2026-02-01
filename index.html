@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        
+        <header id="header">
+            <h1>Expense Tracker</h1>
+            <p >Total:<span id="total">₹0</span> </p>
+        </header>
+
+        <main>
+
+            <section id="add_expense">
+                <h2>Add Expense</h2>
+
+                <form id="form_add_expense">
+                    <div class="form-group">
+                        <label for="expense_title">Expense</label>
+                        <input type="text" id="expense_title" placeholder="Title" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input type="number" id="amount" placeholder="0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select id="category" required>
+                            <option value="">Select</option>
+                            <option value="food">Food</option>
+                            <option value="transport">Transport</option>
+                            <option value="shopping">Shopping</option>
+                            <option value="bills">Bills</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="expense_date">Date</label>
+                        <input type="date" id="expense_date" required>
+                    </div>
+
+                    <button type="submit" id="submit">ADD Expense</button>
+                    <br>
+                    <br>
+
+
+                    <button type="button" id="clear">Clear</button>
+
+
+
+
+                </form>
+
+
+            </section>
+
+            <section class="expense-list" id="expenseList"></section>
+            <section class="filter-List-cat" id="filter-cat">
+                <h4>filter</h4>
+                <label for="filter-category">Category</label>
+                        <select id="filter-category" required>
+                            <option value="">Select</option>
+                            <option value="food">Food</option>
+                            <option value="transport">Transport</option>
+                            <option value="shopping">Shopping</option>
+                            <option value="bills">Bills</option>
+                            <option value="other">Other</option>
+                        </select>
+                    <br>
+                    <select id="filter-month">
+                        <option value="">Filter by Month</option>
+                        <option value="0">January</option>
+                        <option value="1">February</option>
+                        <option value="2">March</option>
+                        <option value="3">April</option>
+                        <option value="4">May</option>
+                        <option value="5">June</option>
+                        <option value="6">July</option>
+                        <option value="7">August</option>
+                        <option value="8">September</option>
+                        <option value="9">October</option>
+                        <option value="10">November</option>
+                        <option value="11">December</option>
+                    </select>
+                    <br>
+                    <button type="button" id="clear-filter">Clear Filter</button>
+
+                    </div>
+            
+            </section>
+            
+
+            
+                
+        </main>
+    </div>
+    <script src="js2.js"></script>
+</body>
+
+</html>
